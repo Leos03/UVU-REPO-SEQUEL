@@ -1,8 +1,15 @@
 ﻿using System;
 
-public class Class1
+public class Program
 {
-	public Class1()
+	public void Main()
 	{
+		weapon[] weaponsObjs = {new weapon()};
+		Console.WriteLine(weaponsObjs[0].weaponName);
 	}
+}
+
+public class weapon {
+	public string weaponName = "Iron Rapier";
+	public int powerLevel = 1;
 }
