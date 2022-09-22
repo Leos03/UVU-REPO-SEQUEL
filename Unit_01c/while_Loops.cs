@@ -12,4 +12,6 @@ public class Class1
 		}
 		while (i < 85);
 	}
+
+	{
 }
