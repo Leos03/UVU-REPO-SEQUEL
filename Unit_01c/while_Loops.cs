@@ -4,12 +4,12 @@ public class Class1
 {
 	public void Main()
 	{
-		int i = 0;
+		int i = 21;
 		do
 		{
 			Console.WriteLine(i);
 			i++;
 		}
-		while (i < 5);
+		while (i < 85);
 	}
 }
