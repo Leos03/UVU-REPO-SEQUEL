@@ -9,5 +9,9 @@ public class Program
 		breads[4] = "HOLY TOAST";
 		Console.WriteLine(breads[4]);
 		Console.WriteLine(breads.Length);
+		for (int i = 0; i < breads.Length; i++)
+		{
+			Console.WriteLine(breads[i]);
+		}
 	}
 }
