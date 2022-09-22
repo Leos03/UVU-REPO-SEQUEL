@@ -6,7 +6,7 @@ public class Program
 	{
 		for (int i = 21; i < 85; i++)
 		{
-			Console.WriteLine(i);
+			Console.WriteLine(i + " Supreme Numbirbs");
 			// I don't understand what the i++ does
 			// Welp, this should only show me numbirbs between 21 and 84
 			// Numbirbs...
