@@ -11,6 +11,7 @@ public class Program
 			// Welp, this should only show me numbirbs between 21 and 84
 			// Numbirbs...
 			// Wait go back to the console, we're adding supreme numbirbs
+			// Changed to odd numbers because I gained small bits of knowleg
 		}
 	}
 }
