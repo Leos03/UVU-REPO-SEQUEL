@@ -4,7 +4,7 @@ public class Program
 {
 	public void Main()
 	{
-		for (int i = 21; i < 85; i++)
+		for (int i = 21; i < 85; i = i + 2)
 		{
 			Console.WriteLine(i + " Supreme Numbirbs :D");
 			// I don't understand what the i++ does
