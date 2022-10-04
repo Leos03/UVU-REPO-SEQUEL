@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class DoWhileLoop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
-        
-    }
+        bool shouldContinue = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        do
+        {
+            print("Oh, Ello...");
+        } while (shouldContinue == true);
     }
 }
