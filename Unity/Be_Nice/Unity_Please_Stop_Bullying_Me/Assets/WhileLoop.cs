@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class WhileLoop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    int cupsInTheSink = 4;
 
-    // Update is called once per frame
-    void Update()
+    void Start ()
     {
-        
+        while(cupsInTheSink > 0)
+        {
+            Debug.Log("I washed a cuppy!");
+            cupsInTheSink--:
+        }
     }
 }
