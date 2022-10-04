@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class ForLoop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    int numEnemies = 3;
 
-    // Update is called once per frame
-    void Update()
+
+    void Start ()
     {
-        
+        for(int i = 0; i < numEnemies; i++)
+        {
+            Debug.Log("Creating enemy number: " + i);
+        }
     }
 }
