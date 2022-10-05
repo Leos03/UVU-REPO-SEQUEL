@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ForeachLoop : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        string[] strings = new string[3];
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        strings[0] = "First String";
+        strings[1] = "Second String";
+        strings[3] = "Third String";
+
+        foreach(string item in strings)
+        {
+            print(item);
+        }
     }
 }
