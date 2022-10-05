@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class DestroyOther : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject other;
 
-    // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        
+        if(Input.GetKey(KeyCode.Space))
+        {
+            Destroy(other);
+        }
     }
 }
