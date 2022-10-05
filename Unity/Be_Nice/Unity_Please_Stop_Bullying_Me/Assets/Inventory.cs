@@ -41,6 +41,6 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(myStuff.bullets);
+        Debug.Log(myStuff.arrows);
     }
 }
