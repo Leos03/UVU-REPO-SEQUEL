@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Rigidbody arrowPrefab;
+    public Transform firePosition;
+    public float arrowSpeed;
+
+
+    private Inventory inventory;
+
+
+    void Awake()
     {
-        
+        inventory = GetComponent<Inventory>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        Shoot();
+    }
+
+
+    void Shoot()
+    {
+        if (Input.GetButtonDown("Fire1") && inventory.myStuff.arrows > 0)
+        {
+            Rigidbody arrowInstance = Instantiate(arrowPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
+            arrowInstance.AddForce(firePosition.forward * arrowSpeed);
+            inventory.myStuff.arrows--;
+        }
     }
 }
