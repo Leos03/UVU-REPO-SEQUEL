@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class AwakeAndStart : MonoBehaviour
 {
-    void Awake()
+    void FixedUpdate()
     {
-        Debug.Log("Awake called.");
+        Debug.Log("FixedUpdate time :" + Time.deltaTime);
     }
 
 
-    void Start()
+    void Update()
     {
-        Debug.Log("Start called.");
+        Debug.Log("Update time :" + Time.deltaTime);
     }
 }
