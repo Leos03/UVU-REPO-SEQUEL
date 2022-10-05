@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class InvokeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject target;
+
+
+    void Start ()
     {
-        
+        Invoke("SpawnObject", 2);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnObject ()
     {
-        
+        Instantiate(target, new Vector3(0, 2, 0)Quaternion.identity);
     }
 }
