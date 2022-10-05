@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class DestroyBasic : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Update ()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(input.GetKey(KeyCode.Space))
+        {
+            Destroy(gameObject);
+        }
     }
 }
