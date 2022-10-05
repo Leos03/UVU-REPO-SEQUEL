@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject[] players;
+
     void Start()
     {
-        
-    }
+        players = GameObject.FindGameObjectsWithTag("Player");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for (int i = 0; i < players.Length; i++)
+        {
+            Debug.Log("Player Number " + i + " is named " + players[i].name);
+        }
     }
 }
