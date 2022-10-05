@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class UsingInstantiate : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Rigidbody staffPrefab;
+    public Transform barrelEnd;
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Rigidbody staffInstance;
+            staffInstance = Instantiate(staffPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
+            staffInstance.AddForce(barrelEnd.forward * 5000);
+        }
     }
 }
