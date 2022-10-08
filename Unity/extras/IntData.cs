@@ -1,8 +1,24 @@
-﻿using System;
+﻿using UnityEngine;
+using UnityEngin.UI;
 
-public class Class1
+[CreateAssetMenu]
+
+public class IntData : ScriptableObject
 {
-	public Class1()
-	{
-	}
+    public int value;
+
+    public void UpdateValue(int number)
+    {
+        value += number;
+    }
+
+    public void ReplaceValue (int number)
+    {
+        value = number;
+    }
+
+    public void DisplayImage(Image img)
+    {
+        img.fillamount
+    }
 }
