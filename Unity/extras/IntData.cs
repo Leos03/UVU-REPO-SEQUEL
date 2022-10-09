@@ -19,7 +19,11 @@ public class IntData : ScriptableObject
 
     public void DisplayImage(Image img)
     {
-        img.fillamount
+        img.fillAmount = value;
+    }
 
+    public void DisplayNumber(Text txt)
+    {
+        txt.text = value.ToString();
     }
 }
