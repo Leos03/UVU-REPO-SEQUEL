@@ -20,5 +20,6 @@ public class IntData : ScriptableObject
     public void DisplayImage(Image img)
     {
         img.fillamount
+
     }
 }
