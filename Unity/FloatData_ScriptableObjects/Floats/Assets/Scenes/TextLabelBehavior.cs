@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class TextLabelBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Text label;
+    public FloatData dataobj;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        label = GetComponent<Text>();
+        label.text = dataobj.value.ToString(CultureInfo.InvariantCulture);
     }
 }
