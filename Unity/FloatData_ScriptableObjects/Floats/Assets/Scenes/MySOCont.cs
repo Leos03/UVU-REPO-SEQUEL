@@ -5,29 +5,20 @@ using UnityEngine.UI;
 
 public class MySoCont : MonoBehaviour
 {
-
-	public Card card;
+	public Chara info;
 
 	public Text nameText;
-	public Text descriptionText;
 
-	public Image artworkImage;
-
-	public Text manaText;
+	public Text magicText;
 	public Text attackText;
-	public Text healthText;
+	public Text hpText;
 
-	// Use this for initialization
 	void Start()
 	{
-		nameText.text = card.name;
-		descriptionText.text = card.description;
-
-		artworkImage.sprite = card.artwork;
-
-		manaText.text = card.manaCost.ToString();
-		attackText.text = card.attack.ToString();
-		healthText.text = card.health.ToString();
+		nameText.text = info.name;
+		magicText.text = info.magicCost.ToString();
+		attackText.text = info.attack.ToString();
+		hpText.text = info.hp.ToString();
 	}
 
 }
