@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MySO : MonoBehaviour
+public class Card : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public new string name;
+	public string description;
+
+	public int magicCost;
+	public int attack;
+
+	public void Print()
+	{
+		Debug.Log(name + " " + description + " magicCost " + magicCost);
+	}
+
 }
