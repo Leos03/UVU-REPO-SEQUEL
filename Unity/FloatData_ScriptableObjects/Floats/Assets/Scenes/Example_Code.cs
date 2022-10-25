@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngin.Events;
+using System.Collections;
 
 public class Example_ : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    UnityEvent MyEvent;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
