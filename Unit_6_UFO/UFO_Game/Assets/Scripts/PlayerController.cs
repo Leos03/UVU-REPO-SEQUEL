@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
-    public float speed;
-    public float xRange;
+    public float speed = 20;
+    public float xRange = 30;
 
     void Start()
     {
