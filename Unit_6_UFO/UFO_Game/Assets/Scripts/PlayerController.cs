@@ -23,12 +23,12 @@ public class PlayerController : MonoBehaviour
         // Slide to the left 
         if(transform.position.x < -xRange)
         {
-            transform.position = new Vector3( -xRange, transform.position.y, transform.position.z)
+            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
         }
         // Slide to the right
         if (transform.position.x < xRange)
         {
-            transform.position = new Vector3( xRange, transform.position.y, transform.position.z)
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
     }
 }
