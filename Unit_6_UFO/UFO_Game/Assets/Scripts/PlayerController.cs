@@ -14,6 +14,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horizontalInput = horizontalInput.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxis("Horizontal");
     }
 }
