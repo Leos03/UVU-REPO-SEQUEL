@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 20;
     public float xRange = 30;
+    public Transform pewPew;
+    public GameObject laser;
 
     void Start()
     {
@@ -29,6 +31,11 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(laser, pewPew.transform.position, laser.transform.rotaion);
         }
     }
 }
