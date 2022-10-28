@@ -9,11 +9,20 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     void Awake()
     {
-        Time.timeScale = 1;
+       // Time.timeScale = 1;
     }
 
     void Update()
     {
-        if(transform.position.z)
+        if(transform.position.z > topBounds)
+        {
+            Destroy(gameObject);
+        }
+        else if(transform.position.z < lowerBounds)
+        {
+            Debug.Log("You Failed c(´_`c)");
+            Destroy(gameObject);
+            //Time.timeScale = 0;
+        }
     }
 }
