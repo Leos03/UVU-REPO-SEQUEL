@@ -610,6 +610,8 @@ MonoBehaviour:
   horizontalInput: 0
   speed: 20
   xRange: 30
+  pewPew: {fileID: 1821682266}
+  laser: {fileID: 9070841890849164265, guid: 3e06f4c7e4ef02547bb07b43be3e06bd, type: 3}
 --- !u!1 &1821682265
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821682266}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: PewPew
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -634,7 +636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821682265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.75}
+  m_LocalPosition: {x: 0, y: 0, z: 1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
