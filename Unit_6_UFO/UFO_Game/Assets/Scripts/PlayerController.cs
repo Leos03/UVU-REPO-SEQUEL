@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(laser, pewPew.transform.position, laser.transform.rotaion);
+            Instantiate(laser, pewPew.transform.position, laser.transform.rotation);
         }
     }
 }
