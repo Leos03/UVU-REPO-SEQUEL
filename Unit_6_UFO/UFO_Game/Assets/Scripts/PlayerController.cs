@@ -10,10 +10,6 @@ public class PlayerController : MonoBehaviour
     public Transform pewPew;
     public GameObject laser;
 
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -37,5 +33,10 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(laser, pewPew.transform.position, laser.transform.rotation);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
     }
 }
