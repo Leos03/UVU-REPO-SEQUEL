@@ -10,13 +10,9 @@ public class PickUp : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+        Console.WriteLine("Item recieved :D")
     }
 }
