@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6589541981716777828}
   - component: {fileID: 6589541981716777829}
   - component: {fileID: 6589541981716777833}
+  - component: {fileID: 3193768176641413852}
   m_Layer: 0
   m_Name: MedShip
   m_TagString: Untagged
@@ -111,3 +112,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+--- !u!114 &3193768176641413852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589541981716777826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355fbdd4c72d2a14f889d0ed9d6ddaa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 30
+  lowerBounds: -10
