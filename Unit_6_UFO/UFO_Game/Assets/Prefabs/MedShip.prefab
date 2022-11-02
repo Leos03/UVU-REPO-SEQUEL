@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6589541981716777833}
   - component: {fileID: 3193768176641413852}
   - component: {fileID: 81898539303846226}
+  - component: {fileID: -64891568785117778}
   m_Layer: 0
   m_Name: MedShip
   m_TagString: Untagged
@@ -143,3 +144,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-64891568785117778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589541981716777826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8e95158370b34eade2817a122dbb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
