@@ -254,7 +254,6 @@ MonoBehaviour:
   - {fileID: 1817853098580152624, guid: 6937905fff67d1e4fb214fcddd397cf6, type: 3}
   - {fileID: 6589541981716777826, guid: 2b20a02bb266749448a083186ac551ca, type: 3}
   - {fileID: 6876734727090400261, guid: 9f04519dc41070446ac9bd3763df8e4d, type: 3}
-  ufoIndex: 1
 --- !u!4 &420750019
 Transform:
   m_ObjectHideFlags: 0
@@ -416,8 +415,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -441,7 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 20, z: 0}
+  m_LocalPosition: {x: 0, y: 30, z: 5.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -561,7 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 20
-  xRange: 30
+  xRange: 25.5
   pewPew: {fileID: 1821682266}
   laser: {fileID: 9070841890849164265, guid: 3e06f4c7e4ef02547bb07b43be3e06bd, type: 3}
 --- !u!1 &1821682265
