@@ -1,0 +1,1 @@
+Making a new folder for my challenges & keeping them in visual studio so that they don't mess up the rest of my unity project. 

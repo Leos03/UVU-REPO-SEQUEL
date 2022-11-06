@@ -13,6 +13,6 @@ public class PickUp : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        Console.WriteLine("Item recieved :D")
+        Debug.Log("Item recieved :D");
     }
 }
