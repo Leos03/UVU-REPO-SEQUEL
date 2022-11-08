@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionDetect : MonoBehaviour
 {
     public ScoreManager scoreManager;
+
     public int scoreToGive;
 
     void Start()
