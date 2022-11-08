@@ -1,0 +1,14 @@
+I don't want it to be lost forever so I keep it
+
+Under the sliding to the left/right
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(laser, pewPew.transform.position, laser.transform.rotation);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+    }
