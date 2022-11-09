@@ -8,11 +8,15 @@ public class PlayerController : MonoBehaviour
     public float speed = 25;
     public float xRange = 30;
     public Transform pewPew;
+    public AudioClip shootSound;
+    private AudioSource playerAudio;
     public GameObject laser;
     public GameManager gameManager;
 
+
     void Start()
     {
+        playerAudio = GetComponent<AudioSource>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -37,6 +41,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             Instantiate(laser, pewPew.transform.position, laser.transform.rotation);
+            playerAudio.PlayOneShot(shootSound, 1.0f);
         }
     }
 
