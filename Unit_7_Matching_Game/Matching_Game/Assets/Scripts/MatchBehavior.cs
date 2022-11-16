@@ -11,6 +11,13 @@ public class MatchBehavior : MonoBehaviour
             return;
 
         var otherID = tempObj.idObj;
-        Debug.Log(otherID == idObj ? "Matched" : "No Match");
+        if (otherID == idObj)
+        {
+            Debug.Log("Matched");
+        }
+        else
+        {
+            Debug.Log("No Match");
+        }
     }
 }
