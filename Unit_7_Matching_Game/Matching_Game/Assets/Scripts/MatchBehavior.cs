@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class MatchBehavior : MonoBehaviour
+{
+    public ID idObj;
+
+    private void onTriggerEnter(Collider other)
+    {
+        var tempObj = other.GetComponent<IDContainerBehavior>();
+        if (tempObj != null)
+            return;
+
+        var otherID = tempObj.idObj;
+        if (otherID == idObj)
+        {
+            Debug.Log("Matched");
+        }
+    }
+}
