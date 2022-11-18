@@ -16,3 +16,4 @@ public class SpriteBehaviorObject : MonoBehaviour
         rendererObj.color = obj.value;
     }
 }
+ 
