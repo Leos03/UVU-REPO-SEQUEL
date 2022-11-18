@@ -251,6 +251,8 @@ GameObject:
   - component: {fileID: 411527768}
   - component: {fileID: 411527767}
   - component: {fileID: 411527766}
+  - component: {fileID: 411527772}
+  - component: {fileID: 411527771}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -367,6 +369,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411527771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411527765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2882121b66f56764a82997bf4e4328d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &411527772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411527765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2882121b66f56764a82997bf4e4328d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +639,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idObj: {fileID: 11400000, guid: c5f0a2e936ddba34eaf7b3c22bccbfac, type: 2}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1493404211
 Rigidbody:
   m_ObjectHideFlags: 0

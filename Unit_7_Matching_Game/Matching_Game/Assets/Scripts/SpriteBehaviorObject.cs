@@ -1,16 +1,13 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
+
 public class SpriteBehaviorObject : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private SpriteRenderer rendererObj;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        rendererObj = GetComponent<SpriteRenderer>(); 
     }
 }
