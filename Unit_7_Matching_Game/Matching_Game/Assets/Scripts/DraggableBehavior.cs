@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class DraggableBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Camera cameraObj;
+    public bool draggable;
+
     void Start()
     {
-        
+        cameraObj = Camera.main;
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator OnMouseDown()
     {
-        
+        draggable = true;
+        while (draggable)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
+    public void OnMouseUp()
+    {
+        draggable = false;
     }
 }
