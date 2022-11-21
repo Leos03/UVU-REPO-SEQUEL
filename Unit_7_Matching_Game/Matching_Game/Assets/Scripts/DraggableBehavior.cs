@@ -1,12 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DraggableBehavior : MonoBehaviour
 {
     private Camera cameraObj;
     public bool draggable;
     public Vector3 position, offset;
+    public UnityEvent startDragEvent, endDragEvent;
 
     void Start()
     {
@@ -17,6 +18,8 @@ public class DraggableBehavior : MonoBehaviour
     {
         offset = transform.position - cameraObj.ScreenToWorldPoint(Input.mousePosition);
         draggable = true;
+        startDragEvent.Invoke();
+
         yield return new WaitForFixedUpdate();
 
         while (draggable)
@@ -30,5 +33,6 @@ public class DraggableBehavior : MonoBehaviour
     public void OnMouseUp()
     {
         draggable = false;
+        endDragEvent.Invoke();
     }
 }
